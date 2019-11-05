@@ -1,0 +1,26 @@
+@import "../Style/mixins/media";
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@include breakpoint(mobile, min) {
+  .container {
+    width: 750px;
+  }
+}
+
+@include breakpoint(tablet, min) {
+  .container {
+    width: 970px;
+  }
+}
+
+@include breakpoint(laptop, min) {
+  .container {
+    width: 1170px;
+  }
+}

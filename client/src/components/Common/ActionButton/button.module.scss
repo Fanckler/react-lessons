@@ -1,0 +1,36 @@
+.button {
+  padding: 10px 36.8px 10px;
+  border: 2px solid #2ca0ff;
+  transition: all .2s ease;
+  color: #2ca0ff;
+  font-family: Open Sans,sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  border-radius: 2rem;
+  background-color: transparent;
+
+  &--blue {
+    border-color: #2ca0ff;
+    color: #2ca0ff;
+    margin: 0px 15px 0px 0px;
+
+    &:hover {
+      border-color: #2ca0ff;
+      background-color: #2ca0ff;
+      color: #fff;
+    }
+  }
+
+  &--orange {
+    border-color: #ff7b0a;
+    background-color: #ff7b0a;
+    color: #ffffff;
+
+    &:hover {
+      border-color: #e76403;
+      background-color: #e76403;
+    }
+  }
+}

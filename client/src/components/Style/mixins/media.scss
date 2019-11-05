@@ -1,0 +1,17 @@
+@import './breakpoints';
+
+@mixin breakpoint($breakpoint, $direction) {
+
+  $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+  @if $direction == max {
+    @media (max-width: ($breakpoint-value - 1)) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: ($breakpoint-value)) {
+      @content;
+    }
+  }
+}

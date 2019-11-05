@@ -1,0 +1,11 @@
+.header {
+  color: red;
+  background-color: #190b2c;
+}
+
+.headerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+}
