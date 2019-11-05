@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from "../Link";
-import {mainMenu} from "./menu";
-import {IMenu} from "./menu";
+import {mainMenu} from "../MenuList/menu";
+import {IMenu} from "../MenuList/menu";
 import style from './navbar.module.scss'
 import {ActionButton} from "../ActionButton/ActionButton";
+import {IconMenu} from "../IconMenu";
 
 
 export const NavMenu: React.FC = () => {
@@ -12,7 +13,8 @@ export const NavMenu: React.FC = () => {
             <div className={style.mainMenu}>
                 {
                     mainMenu.map( (item:IMenu, index) => {
-                        return <Link key={index} {...item} />
+
+                        return index <= 4 &&  <Link key={index} {...item} />
                     })
                 }
             </div>
@@ -20,6 +22,7 @@ export const NavMenu: React.FC = () => {
             <div className={style.buttonGroup}>
                 <ActionButton className={`blue`}>Log in</ActionButton>
                 <ActionButton className={`orange`}>Join for Free</ActionButton>
+                <IconMenu />
             </div>
         </div>
     );
