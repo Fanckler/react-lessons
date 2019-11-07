@@ -5,6 +5,7 @@ import {IMenu} from "../MenuList/menu";
 import style from './navbar.module.scss'
 import {ActionButton} from "../ActionButton/ActionButton";
 import {IconMenu} from "../IconMenu";
+import {OpenLoginPopup} from "../../../Helpers/openPopupHandler";
 
 
 export const NavMenu: React.FC = () => {
@@ -19,7 +20,9 @@ export const NavMenu: React.FC = () => {
             </div>
 
             <div className={style.buttonGroup}>
-                <ActionButton className={`blue`} onClickHandler={() => {console.log(1)} }>Log in</ActionButton>
+                <OpenLoginPopup>
+                    <ActionButton className={`blue`} onClickHandler={() => {console.log(1)} }>Log in</ActionButton>
+                </OpenLoginPopup>
                 <ActionButton className={`orange`} responsive={'hidden-sm'} onClickHandler={()=> {console.log(2)} }>Join for Free</ActionButton>
                 <IconMenu />
             </div>

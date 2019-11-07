@@ -2,7 +2,7 @@ import React, {useState, useRef} from 'react';
 import {DropDown} from "../DropDown/DropDown";
 import cn from "classnames";
 import style from './iconmenu.module.scss';
-import {useOutsideClick} from "../../Helpers/useOutsideClick";
+import {useOutsideClick} from "../../../Helpers/useOutsideClick";
 
 
 interface IProps {
