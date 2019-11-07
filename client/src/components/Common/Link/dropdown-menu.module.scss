@@ -1,0 +1,88 @@
+@import "../../Style/mixins/media";
+
+.link {
+  font-size: 18px;
+  padding: 11px 0 11px;
+  border-color: transparent;
+  border-bottom: 1px solid #dbdbdb;
+  transition: all .2s ease-in-out;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  color: #393939;
+  font-weight: 400;
+  margin-right: auto;
+  margin-left: 0;
+  text-decoration: none;
+
+
+  span {
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: #34b4e6;
+    width: 64px;
+  }
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+
+  &:first-child {
+      border-top-left-radius: 6px;
+  }
+
+  &:last-of-type {
+    overflow: hidden;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+
+  &.videochat {
+    display: none;
+  }
+  &.gallery {
+    display: none;
+  }
+  &.videoclips {
+    display: none;
+  }
+  &.search {
+    display: none;
+  }
+  &.romance-tour {
+    display: none;
+  }
+
+}
+
+
+@include breakpoint(laptop, max) {
+  .link {
+    &.romance-tour {
+      display: flex;
+    }
+  }
+}
+
+@include breakpoint(tablet, max) {
+  .link {
+    &.videochat {
+      display: flex;
+    }
+    &.gallery {
+      display: flex;
+    }
+    &.videoclips {
+      display: flex;
+    }
+    &.search {
+      display: flex;
+    }
+    &.romance-tour {
+      display: flex;
+    }
+  }
+}

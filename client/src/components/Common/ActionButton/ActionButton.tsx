@@ -5,13 +5,16 @@ import cn from "classnames";
 
 interface IProps {
     className?: string;
+    responsive?: string;
+    onClickHandler?: () => void;
 }
 
 export const ActionButton: React.FC<IProps> = (props) => {
-    const {className, children} = props;
+    const {className, responsive, children, onClickHandler} = props;
 
     return (
-        <button className={cn(style.button, style[`button--${className}`] )}>{children}</button>
+        <button className={cn(style.button, style[`button--${className}`], responsive && style[responsive] )}
+                onClick={onClickHandler}>{children}</button>
     );
 }
 

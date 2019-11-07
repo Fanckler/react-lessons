@@ -1,7 +1,9 @@
+@import "../../Style/mixins/media";
+
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
@@ -20,4 +22,19 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+@include breakpoint(tablet, max) {
+  .navbar {
+    justify-content: flex-end;
+  }
+  .mainMenu {
+      display: none;
+  }
+}
+
+@include breakpoint(mobile, max) {
+  .buttonGroup {
+    position: inherit;
+  }
 }

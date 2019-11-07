@@ -3,9 +3,7 @@ import {Header} from "../../Layout/header";
 
 export const HomePage: React.FC = () => {
     return (
-        <>
-            <Header />
-        </>
+        <Header />
     );
 }
 

@@ -1,0 +1,321 @@
+@font-face {
+  font-family: fontello;
+  src: url(https://static.j4l.com/fonts/fontello.96940b9c.eot);
+  src: url(https://static.j4l.com/fonts/fontello.96940b9c.eot#iefix) format("embedded-opentype"),url(https://static.j4l.com/fonts/fontello.3f18896a.woff2) format("woff2"),url(https://static.j4l.com/fonts/fontello.0ca25e23.woff) format("woff"),url(https://static.j4l.com/fonts/fontello.8733f592.ttf) format("truetype"),url(https://static.j4l.com/images/fontello.17661f46.svg#fontello) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+[class*=" fa-"]:before,[class^=fa-]:before {
+  font-family: fontello;
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.fa-twitter-1:before {
+  content: "\E800"
+}
+
+.fa-search:before {
+  content: "\E801"
+}
+
+.fa-envelope-o:before {
+  content: "\E803"
+}
+
+.fa-star:before {
+  content: "\E806"
+}
+
+.fa-star-o:before {
+  content: "\E807"
+}
+
+.fa-users:before {
+  content: "\E80A"
+}
+
+.fa-video:before {
+  content: "\E80B"
+}
+
+.fa-picture:before {
+  content: "\E80D"
+}
+
+.fa-th-large:before {
+  content: "\E810"
+}
+
+.fa-check:before {
+  content: "\E813"
+}
+
+.fa-times:before {
+  content: "\E816"
+}
+
+.fa-help-circle:before {
+  content: "\E81C"
+}
+
+.fa-info-circle:before {
+  content: "\E81D"
+}
+
+.fa-comments:before {
+  content: "\E835"
+}
+
+.fa-map-marker:before {
+  content: "\E839"
+}
+
+.fa-logout:before {
+  content: "\E845"
+}
+
+.fa-down-dir:before {
+  content: "\E854"
+}
+
+.fa-up-dir:before {
+  content: "\E855"
+}
+
+.fa-down-open:before {
+  content: "\E858"
+}
+
+.fa-left-open:before {
+  content: "\E859"
+}
+
+.fa-right-open:before {
+  content: "\E85A"
+}
+
+.fa-up-open:before {
+  content: "\E85B"
+}
+
+.fa-down-big:before {
+  content: "\E85C"
+}
+
+.fa-left-big:before {
+  content: "\E85D"
+}
+
+.fa-right-big:before {
+  content: "\E85E"
+}
+
+.fa-up-big:before {
+  content: "\E85F"
+}
+
+.fa-cw:before {
+  content: "\E864"
+}
+
+.fa-arrows-cw:before {
+  content: "\E866"
+}
+
+.fa-play:before {
+  content: "\E868"
+}
+
+.fa-globe:before {
+  content: "\E877"
+}
+
+.fa-gift:before {
+  content: "\E895"
+}
+
+.fa-left:before {
+  content: "\E8B0"
+}
+
+.fa-credits:before {
+  content: "\E900"
+}
+
+.fa-flirty:before {
+  content: "\E902"
+}
+
+.fa-ladies:before {
+  content: "\E904"
+}
+
+.fa-naughty:before {
+  content: "\E905"
+}
+
+.fa-right:before {
+  content: "\E908"
+}
+
+.fa-webcam:before {
+  content: "\E90A"
+}
+
+.fa-closed-folder:before {
+  content: "\E90B"
+}
+
+.fa-credits-1:before {
+  content: "\EABA"
+}
+
+.fa-cancel:before {
+  content: "\EABB"
+}
+
+.fa-twitter:before {
+  content: "\F099"
+}
+
+.fa-facebook:before {
+  content: "\F09A"
+}
+
+.fa-left-circle:before {
+  content: "\F0A8"
+}
+
+.fa-right-circle:before {
+  content: "\F0A9"
+}
+
+.fa-up-circle:before {
+  content: "\F0AA"
+}
+
+.fa-down-circle:before {
+  content: "\F0AB"
+}
+
+.fa-docs:before {
+  content: "\F0C5"
+}
+
+.fa-bars:before {
+  content: "\F0C9"
+}
+
+.fa-google-plus:before {
+  content: "\F0D5"
+}
+
+.fa-sort-desc:before {
+  content: "\F0DD"
+}
+
+.fa-sort-asc:before {
+  content: "\F0DE"
+}
+
+.fa-comments-o:before {
+  content: "\F0E6"
+}
+
+.fa-angle-double-left:before {
+  content: "\F100"
+}
+
+.fa-angle-double-right:before {
+  content: "\F101"
+}
+
+.fa-angle-double-up:before {
+  content: "\F102"
+}
+
+.fa-angle-double-down:before {
+  content: "\F103"
+}
+
+.fa-angle-left:before {
+  content: "\F104"
+}
+
+.fa-angle-right:before {
+  content: "\F105"
+}
+
+.fa-angle-up:before {
+  content: "\F106"
+}
+
+.fa-angle-down:before {
+  content: "\F107"
+}
+
+.fa-quote-left:before {
+  content: "\F10D"
+}
+
+.fa-quote-right:before {
+  content: "\F10E"
+}
+
+.fa-question:before {
+  content: "\F128"
+}
+
+.fa-info:before {
+  content: "\F129"
+}
+
+.fa-play-circle:before {
+  content: "\F144"
+}
+
+.fa-ok-square:before {
+  content: "\F14A"
+}
+
+.fa-pencil-square:before {
+  content: "\F14B"
+}
+
+.fa-youtube-play:before {
+  content: "\F16A"
+}
+
+.fa-instagram:before {
+  content: "\F16D"
+}
+
+.fa-life-ring:before {
+  content: "\F1CD"
+}
+
+.fa-wpforms:before {
+  content: "\F298"
+}
+
+.fa-question-circle-o:before {
+  content: "\F29C"
+}
+
+.fa-user-circle:before {
+  content: "\F2BD"
+}

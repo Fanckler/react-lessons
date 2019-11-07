@@ -1,10 +1,13 @@
+@import "../../Style/mixins/media";
+
 .dropdown {
   position: absolute;
   top: 100%;
   right: -15px;
   z-index: 1000;
   min-width: 160px;
-  padding: 5px 0;
+  width: 320px;
+  padding: 0 0;
   margin: 8px 0 0;
   font-size: 14px;
   text-align: left;
@@ -27,7 +30,17 @@
     border-style: solid;
     border-width: 0 9px 10px;
     position: absolute;
-    top: -9px;
+    top: -10px;
     right: 20px;
+  }
+}
+
+
+@include breakpoint(mobile, max) {
+  .dropdown {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
   }
 }

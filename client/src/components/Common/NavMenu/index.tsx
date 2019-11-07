@@ -12,16 +12,15 @@ export const NavMenu: React.FC = () => {
         <div className={style.navbar}>
             <div className={style.mainMenu}>
                 {
-                    mainMenu.map( (item:IMenu, index) => {
-
-                        return index <= 4 &&  <Link key={index} {...item} />
+                    mainMenu.map( (item:IMenu, index:number) => {
+                        return index <= 4 &&  <Link key={index} {...{item, isMainMenu: true}} />
                     })
                 }
             </div>
 
             <div className={style.buttonGroup}>
-                <ActionButton className={`blue`}>Log in</ActionButton>
-                <ActionButton className={`orange`}>Join for Free</ActionButton>
+                <ActionButton className={`blue`} onClickHandler={() => {console.log(1)} }>Log in</ActionButton>
+                <ActionButton className={`orange`} responsive={'hidden-sm'} onClickHandler={()=> {console.log(2)} }>Join for Free</ActionButton>
                 <IconMenu />
             </div>
         </div>

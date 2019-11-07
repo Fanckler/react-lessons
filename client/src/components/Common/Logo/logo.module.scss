@@ -1,0 +1,13 @@
+@import "../../Style/mixins/media";
+
+.logo {
+  width: 116px;
+  height: 60px;
+}
+
+@include breakpoint(mobile, max) {
+  .logo {
+    width: 74px;
+    height: auto;
+  }
+}

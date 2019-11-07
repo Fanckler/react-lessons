@@ -3,57 +3,69 @@ export interface IMenu {
     path: string;
     icon: string;
     title: string;
+    modifier: string;
+    className?: string;
 }
 
 export const mainMenu = [
     {
         title: 'VideoChat',
-        icon: '',
-        path: '/videochat'
+        icon: 'fa-comments-o',
+        modifier: 'videochat',
+        path: '/'
     },
     {
         title: 'Ladies Gallery',
-        icon: '',
+        icon: 'fa-ladies',
+        modifier: 'gallery',
         path: '/gallery'
     },
     {
         title: 'VideoClips',
-        icon: '',
+        icon: 'fa-video',
+        modifier: 'videoclips',
         path: '/videoclips'
     },
     {
         title: 'Search',
-        icon: '',
+        icon: 'fa-search',
+        modifier: 'search',
         path: '/search'
     },
     {
         title: 'Romance Tours',
-        icon: '',
+        icon: 'fa-map-marker',
+        modifier: 'romance-tour',
         path: '/romance-tours'
     },
     {
         title: 'Blog',
-        icon: '',
+        icon: 'fa-pencil-square',
+        modifier: 'blog',
         path: '/blog'
     },
     {
         title: 'Useful information',
-        icon: '',
+        icon: 'fa-info',
+        modifier: 'useful-information',
         path: '/blog'
     },
     {
-        title: 'Terms of USe',
+        title: 'Terms of Use',
         icon: '',
+        modifier: 'terms-of-use',
         path: '/terms-of-use'
     },
     {
         title: 'FAQ',
-        icon: '',
+        icon: 'fa-question-circle-o',
+        modifier: 'faq',
         path: '/faq'
     },
     {
         title: 'Support',
-        icon: '',
+        icon: 'fa-life-ring',
+        modifier: 'support',
         path: '/Support'
     }
 ];

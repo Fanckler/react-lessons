@@ -1,0 +1,50 @@
+@import "../../Style/mixins/media";
+
+.link {
+  padding: 0px 20px 0px;
+  font-family: open sans,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 4px;
+    background: transparent;
+  }
+
+  &.active {
+    &:before {
+      background: #2ca0ff;
+    }
+  }
+
+  &:hover {
+    color: #fc7817;
+  }
+
+  span {
+      font-size: 24px;
+      line-height: 1.2;
+      color: #34b4e6;
+  }
+}
+
+@include breakpoint(laptop, max) {
+  .link {
+
+    &.romance-tour {
+      display: none;
+    }
+  }
+}

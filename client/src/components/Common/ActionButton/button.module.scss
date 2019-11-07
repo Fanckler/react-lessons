@@ -1,5 +1,7 @@
+@import "../../Style/mixins/media";
+
 .button {
-  padding: 10px 36.8px 10px;
+  padding: 6.5px 23px 7.5px;
   border: 2px solid #2ca0ff;
   transition: all .2s ease;
   color: #2ca0ff;
@@ -33,4 +35,29 @@
       background-color: #e76403;
     }
   }
+
+  &.show-sm {
+    display: none;
+  }
 }
+
+@include breakpoint(mobile, max) {
+    .button {
+      padding: 4px 23px;
+
+      &--blue {
+        margin: 0;
+      }
+
+      &.hidden-sm {
+        display: none;
+      }
+
+      &.show-sm {
+        display: flex;
+        margin: 3px auto 0;
+      }
+
+    }
+}
+
